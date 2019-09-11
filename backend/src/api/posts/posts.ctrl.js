@@ -1,23 +1,21 @@
-let postId = 1;
-
-const posts = [
-  {
-    id: 1,
-    title: 'title',
-    body: 'body'
-  }
-];
+const Post = require('models/post');
 
 exports.write = (ctx) => {
-  const {
-    title,
-    body
-  } = ctx.request.body;
 
-  postId += 1;
+};
 
-  const post = {id: postId, title, body};
-  posts.push(post);
-  ctx.body = post;
-}
+exports.list = (ctx) => {
 
+};
+
+exports.read = (ctx) => {
+
+};
+
+exports.remove = (ctx) => {
+
+};
+
+exports.update = (ctx) => {
+
+};
